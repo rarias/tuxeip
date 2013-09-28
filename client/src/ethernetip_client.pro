@@ -33,20 +33,20 @@ win32:LIBS        += $(PVBDIR)/win-mingw/bin/librllib.a
 win32:DEFINES     += VALGRING
 # at PC monitor
 #PC_MONITOR{
-win32:INCLUDEPATH += c:/tamaniadora/tuxeip/tuxeip/src
-win32:LIBS        += c:/tamaniadora/tuxeip/tuxeip/src/release/libtuxeip.a
-win32:LIBS	  += C:/tamaniadora/tuxeip/sqlite/tux_sqlite/release/libtux_sqlite.a
-win32:INCLUDEPATH += C:/tamaniadora/tuxeip/sqlite/tux_sqlite
+#win32:INCLUDEPATH += c:/tamaniadora/tuxeip/tuxeip/src
+#win32:LIBS        += c:/tamaniadora/tuxeip/tuxeip/src/release/libtuxeip.a
+#win32:LIBS	  += C:/tamaniadora/tuxeip/sqlite/tux_sqlite/release/libtux_sqlite.a
+#win32:INCLUDEPATH += C:/tamaniadora/tuxeip/sqlite/tux_sqlite
 #}
 # local
-#{
-#win32:INCLUDEPATH += f:/tuxeip/riqarias-queue/tuxeip/src
-#win32:LIBS        += f:/tuxeip/riqarias-queue/tuxeip/src/release/libtuxeip.a
+{
+win32:INCLUDEPATH += f:/tamaniadora/tuxeip/tuxeip/src
+win32:LIBS        += f:/tamaniadora/tuxeip/tuxeip/release/libtuxeip.a
 # for DATABASE management
-#win32:LIBS	  += F:/tuxeip/riqarias-queue/sqlite/libtux_sqlite.a
-#win32:INCLUDEPATH += F:/tuxeip/riqarias-queue/sqlite/tux_sqlite
+win32:LIBS	  += F:/tamaniadora/tuxeip/tux_sqlite/release/libtux_sqlite.a
+win32:INCLUDEPATH += F:/tamaniadora/tuxeip/tux_sqlite/src
 #win32:INCLUDEPATH += F:/tuxeip/riqarias-queue/client/src/sqldrivers
-#}
+}
 win32:LIBS        += $(MINGWDIR)/lib/libws2_32.a
 }
 else {

@@ -628,7 +628,7 @@ int main(int argc,char *argv[])
   if(init(argc, argv) != 0) return -1;
   thread->create(mailboxReadThread,NULL);
 
-  ret = db.open("QSQLITE","localhost","c://automation//datos//produccion.db","","");
+  ret = db.open("QSQLITE","localhost","c://automation//datos//produccion.db","","","deamon");
   if(ret==0){
       printf("base de datos %s abierta\n", "c://automation//datos//produccion.db");
 //  dbmutex.lock();
